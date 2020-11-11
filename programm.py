@@ -33,7 +33,6 @@ min_1 = min(dists) # Находим самое ближайшее предлож
 min_1_ind = dists.index(min_1)
 dists = dists[:min_1_ind] + dists[min_1_ind + 1:]
 min_2 = min(dists) # А теперь второе по величине
-print(min_2)
 file = open('submission-1.txt', 'w')
 file.write(str(min_1) + ' ' + str(min_2))
 file.close()
